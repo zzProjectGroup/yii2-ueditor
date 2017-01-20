@@ -1,0 +1,15 @@
+{
+    "name": "qingfeng/yii2-ueditor",
+    "description": "yii2 集成 百度编辑器 ueditor",
+    "type": "library",
+    "require": {
+        "php": ">=5.4"
+    },
+    "authors": [
+        {
+            "name": "廉庆丰",
+            "email": "471439353@qq.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
