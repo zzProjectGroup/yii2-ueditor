@@ -29,5 +29,8 @@ echo Ueditor::widget([
 上传文件等方法使用 ,需要一个controller 里面 use UeditorController,然后直接调用UeditorController里面的方法即可
 例子
 ```
-
+使用的例子 参考 example/ueditorController.php 
+直接拿过去用也是可以的
 ```
+
+免责声明： 使用本扩展出现问题本人概不负责。本扩展用于学习交流之用不保证没有bug和漏洞 使用之前请仔细审查代码。
