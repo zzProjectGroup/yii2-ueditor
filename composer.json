@@ -1,20 +1,23 @@
 {
-    "name": "qingfeng/yii2-ueditor",
-    "description": "yii2 集成 百度编辑器 ueditor",
-    "type": "library",
-    "require": {
-        "php": ">=5.4"
-    },
-    "authors": [
-        {
-            "name": "廉庆丰",
-            "email": "471439353@qq.com"
-        }
-    ],
-    "minimum-stability": "stable",
-    "autoload": {
-        "psr-4": {
-            "qingfeng\\ueditor\\": ""
-        }
+  "name": "qingfeng/yii2-ueditor",
+  "description": "yii2 集成 百度编辑器 ueditor1.4.3.3 utf8版本  需要php5.4以上版本",
+  "keywords": ["yii2","ueditor"],
+  "homepage": "http://blog.wanphp.cn/library/yii2",
+  "license": "AFL-3.0",
+  "type": "library",
+  "require": {
+    "php": ">=5.4"
+  },
+  "authors": [
+    {
+      "name": "清风",
+      "email": "471439353@qq.com"
     }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "qingfeng\\ueditor\\": ""
+    }
+  }
 }
