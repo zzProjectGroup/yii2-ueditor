@@ -1,7 +1,7 @@
 <?php
-namespace yii\ueditor\controllers;
+namespace qingfeng\ueditor\controllers;
 
-use yii\ueditor\library\Uploader;
+use qingfeng\ueditor\library\Uploader;
 
 /**
  * Created by PhpStorm.

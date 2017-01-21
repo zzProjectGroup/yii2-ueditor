@@ -9,7 +9,7 @@ namespace backend\controllers;
 
 class UeditorController extends Controller
 {
-    use \yii\ueditor\controllers\UeditorController;
+    use \qingfeng\ueditor\controllers\UeditorController;
 
     public $enableCsrfValidation =false;
 

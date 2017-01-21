@@ -11,5 +11,10 @@
             "email": "471439353@qq.com"
         }
     ],
-    "minimum-stability": "stable"
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "qingfeng\\ueditor\\": ""
+        }
+    }
 }

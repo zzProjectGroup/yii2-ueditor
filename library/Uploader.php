@@ -1,5 +1,5 @@
 <?php
-namespace yii\ueditor\library;
+namespace qingfeng\ueditor\library;
 
 /**
  * Created by JetBrains PhpStorm.

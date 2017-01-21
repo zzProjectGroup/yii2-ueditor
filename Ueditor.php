@@ -1,5 +1,6 @@
 <?php
-namespace yii\ueditor;
+namespace qingfeng\ueditor;
+
 use yii\helpers\Html;
 use yii\helpers\Json;
 
