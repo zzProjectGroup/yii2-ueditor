@@ -6,7 +6,19 @@
 
 安装方法
 ```
-composer require qingfeng/yii2-ueditor
+编辑根目录 composer.json文件 在 require:{} 里面添加 
+"qingfeng/yii2-ueditor":"~1.0.6"，保存 
+然后执行
+composer update
+
+例子
+"require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.6",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+	    "qingfeng/yii2-ueditor":"~1.0.6"
+    },
 ```
 
 ```
