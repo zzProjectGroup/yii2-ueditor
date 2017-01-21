@@ -1,14 +1,16 @@
 <?php
 namespace qingfeng\ueditor;
 
+use yii\widgets\InputWidget;
 use yii\helpers\Html;
 use yii\helpers\Json;
+
 
 /**
  * Created by PhpStorm.
  * User: lianqingfeng
  */
-class Ueditor extends \yii\widgets\InputWidget
+class Ueditor extends InputWidget
 {
     public $attributes;
 

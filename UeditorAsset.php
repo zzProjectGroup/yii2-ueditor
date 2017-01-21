@@ -24,6 +24,6 @@ class UeditorAsset extends AssetBundle
     ];
     public function init()
     {
-        $this->sourcePath = \Yii::getAlias('@vendor').'/yiisoft/yii2-ueditor/ueditorAssets'; //设置资源所处的目录
+        $this->sourcePath = \Yii::getAlias('@vendor').'/qingfeng/yii2-ueditor/ueditorAssets'; //设置资源所处的目录
     }
 }
