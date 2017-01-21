@@ -24481,9 +24481,15 @@ UE.plugin.register('simpleupload', function (){
             btnIframeBody = btnIframeDoc.body;
             wrapper = btnIframeDoc.createElement('div');
 
+            var mimeTypesStr='',
+                mimeTypesArr = me.getOpt('imageAllowFiles');
+            $.each(mimeTypesArr,function(k,v){
+                mimeTypesStr+= !mimeTypesStr ? 'image/'+v.substr(1) : ',image/'+v.substr(1)
+            });
+
             wrapper.innerHTML = '<form id="edui_form_' + timestrap + '" target="edui_iframe_' + timestrap + '" method="POST" enctype="multipart/form-data" action="' + me.getOpt('serverUrl') + '" ' +
             'style="' + btnStyle + '">' +
-            '<input id="edui_input_' + timestrap + '" type="file" accept="image/*" name="' + me.options.imageFieldName + '" ' +
+            '<input id="edui_input_' + timestrap + '" type="file" accept="'+mimeTypesStr+'" name="' + me.options.imageFieldName + '" ' +
             'style="' + btnStyle + '">' +
             '</form>' +
             '<iframe id="edui_iframe_' + timestrap + '" name="edui_iframe_' + timestrap + '" style="display:none;width:0;height:0;border:0;margin:0;padding:0;position:absolute;"></iframe>';

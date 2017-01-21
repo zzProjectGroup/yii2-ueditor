@@ -354,6 +354,12 @@
                 imageMaxSize = editor.getOpt('imageMaxSize'),
                 imageCompressBorder = editor.getOpt('imageCompressBorder');
 
+            var mimeTypesStr='',
+                mimeTypesArr = editor.getOpt('imageAllowFiles');
+            $.each(mimeTypesArr,function(k,v){
+                mimeTypesStr+= !mimeTypesStr ? 'image/'+v.substr(1) : ',image/'+v.substr(1)
+            });
+
             if (!WebUploader.Uploader.support()) {
                 $('#filePickerReady').after($('<div>').html(lang.errorNotSupport)).hide();
                 return;
@@ -370,7 +376,7 @@
                 accept: {
                     title: 'Images',
                     extensions: acceptExtensions,
-                    mimeTypes: 'image/*'
+                    mimeTypes: mimeTypesStr
                 },
                 swf: '../../third-party/webuploader/Uploader.swf',
                 server: actionUrl,
