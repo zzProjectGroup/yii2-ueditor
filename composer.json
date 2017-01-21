@@ -1,12 +1,13 @@
 {
   "name": "qingfeng/yii2-ueditor",
   "description": "yii2 集成 百度编辑器 ueditor1.4.3.3 utf8版本  需要php5.4以上版本",
-  "keywords": ["yii2","ueditor"],
+  "keywords": ["yii2-ueditor","yii2","ueditor","qingfeng"],
   "homepage": "http://blog.wanphp.cn/library/yii2",
   "license": "AFL-3.0",
-  "type": "library",
+  "type": "yii2-extension",
   "require": {
-    "php": ">=5.4"
+    "php": ">=5.4",
+    "yiisoft/yii2": "*"
   },
   "authors": [
     {
