@@ -15,7 +15,6 @@ class UeditorAsset extends AssetBundle
         'lang/zh-cn/zh-cn.js',
         'third-party/zeroclipboard/ZeroClipboard.js',
         'third-party/codemirror/codemirror.js',
-        'third-party/zeroclipboard/ZeroClipboard.swf',
     ];
     public $css = [
         'themes/default/css/ueditor.min.css',
