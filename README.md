@@ -3,7 +3,11 @@
 **提交bug 或 留言地址： <a href='http://blog.wanphp.cn/index.php?r=submit-bug/git&gitname=qingfeng__yii2-editor'>我要帮助其他小伙伴, 提交bug</a>**
 
 ---
-
+解决了yii2 advanced 前后台分离 上传图片只能上传到backend/web目录下，现在可以上传到和backend同级的目录下。<br>
+如果同学们有更好的思路欢迎随时@我。<br>
+当然如果图片是直接上传到oss可以忽略此段。<br>
+具体参考example文件夹下的例子
+---
 安装方法
 ```
 编辑根目录 composer.json文件 在 require:{} 里面添加 
