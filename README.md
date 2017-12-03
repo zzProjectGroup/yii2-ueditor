@@ -2,11 +2,6 @@
 **重要说明：发现bug 欢迎指正，我会及时修改，保证其他小伙伴们可以正常使用**
 **提交bug 或 留言地址： <a href='http://blog.wanphp.cn/index.php?r=submit-bug/git&gitname=qingfeng__yii2-editor'>我要帮助其他小伙伴, 提交bug</a>**
 ---
-
-#解决了yii2 advanced 前后台分离 上传图片只能上传到backend/web目录下，现在可以上传到和backend同级的目录下。<br>
-#如果同学们有更好的思路欢迎随时@我。<br>
-#当然如果图片是直接上传到oss可以忽略此段。<br>
-#具体参考example文件夹下的例子
 ---
 安装方法
 ```
@@ -48,5 +43,9 @@ echo Ueditor::widget([
 使用的例子 参考 example/ueditorController.php 
 直接拿过去用也是可以的
 ```
+解决了yii2 advanced 前后台分离 上传图片只能上传到backend/web目录下，现在可以上传到和backend同级的目录下。<br>
+如果同学们有更好的思路欢迎随时@我。<br>
+当然如果图片是直接上传到oss可以忽略此段。<br>
+具体参考example文件夹下的例子
 
 免责声明： 本扩展用于学习交流之用不保证没有bug和漏洞 使用之前请仔细审查代码。
