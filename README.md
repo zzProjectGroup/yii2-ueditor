@@ -22,7 +22,7 @@ composer update
 ```
 
 ```
-//模板里面使用方法
+//模板里面使用方法--- 可以参照example 里面viewExample.php
 echo Ueditor::widget([
     'name' => 'content',
     'options' => [
@@ -45,4 +45,4 @@ echo Ueditor::widget([
 直接拿过去用也是可以的
 ```
 
-免责声明： 使用本扩展出现问题本人概不负责。本扩展用于学习交流之用不保证没有bug和漏洞 使用之前请仔细审查代码。
+免责声明： 本扩展用于学习交流之用不保证没有bug和漏洞 使用之前请仔细审查代码。
