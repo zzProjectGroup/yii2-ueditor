@@ -11,7 +11,7 @@ class UeditorAsset extends AssetBundle
 {
     public $js = [
         'ueditor.config.js',
-        'ueditor.all.min.js',
+        'ueditor.all.js',
         'lang/zh-cn/zh-cn.js',
         'third-party/zeroclipboard/ZeroClipboard.js',
         'third-party/codemirror/codemirror.js',

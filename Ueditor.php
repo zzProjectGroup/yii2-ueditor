@@ -28,10 +28,16 @@ class Ueditor extends InputWidget
         }else{
             $input=Html::textarea($this->name,'',$this->attributes);
         }
-        echo $input;
         UeditorAsset::register($view);//将Ueditor用到的脚本资源输出到视图
+        //设置js需要的变量
+        $ueditorServerUrl = isset($this->options['config']['ueditorServerUrl']) ? $this->options['config']['ueditorServerUrl'] : '';
+        $config =<<<EOF
+        var ueditorServerUrl = '{$ueditorServerUrl}'
+EOF;
+        $view->registerJs($config,$view::POS_HEAD);
         $js='var ue = UE.getEditor("'.$this->options['id'].'",'.$this->getOptions().');';//Ueditor初始化脚本
         $view->registerJs($js, $view::POS_END);//将Ueditor初始化脚本也响应到视图中
+        echo $input;
     }
 
     public function getOptions()
