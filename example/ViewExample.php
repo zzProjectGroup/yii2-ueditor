@@ -5,7 +5,12 @@ echo \qingfeng\ueditor\Ueditor::widget([
     'options' => [
         'id' => 'wanphpTxtContent',
         'focus' => true,
-        'config'=> ['ueditorServerUrl'=>\yii\helpers\Url::to('/wanphp/index',true)],
+        'config'=> [
+            //ueditor服务地址
+            'ueditorServerUrl'=>\yii\helpers\Url::to('/wanphp/index',true),
+            //初始化内容 场景1:编辑时放入原数据
+            'initContent'=>'wanphp',
+        ],
         'toolbars'=> [
             [
                 'anchor', //锚点

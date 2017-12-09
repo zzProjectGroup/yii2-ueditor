@@ -36,6 +36,18 @@ class Ueditor extends InputWidget
 EOF;
         $view->registerJs($config,$view::POS_HEAD);
         $js='var ue = UE.getEditor("'.$this->options['id'].'",'.$this->getOptions().');';//Ueditor初始化脚本
+
+        //初始化内容
+        $initContent = isset($this->options['config']['initContent']) ? $this->options['config']['initContent'] : '';
+        $js .= <<<EOF
+//编辑器准备就绪后会触发该事件 具体看api文档
+// ue.execCommand( 'focus' ); //编辑器家在完成后，让编辑器拿到焦点
+//ue.setContent( 'wanphp.cn' ); //编辑器家在完成后，让编辑器初始化内容
+ue.addListener( 'ready', function( editor ) {
+     ue.setContent( '{$initContent}' );
+ } );
+EOF;
+
         $view->registerJs($js, $view::POS_END);//将Ueditor初始化脚本也响应到视图中
         echo $input;
     }
