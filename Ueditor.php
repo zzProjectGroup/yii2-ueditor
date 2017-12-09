@@ -39,12 +39,13 @@ EOF;
 
         //初始化内容
         $initContent = isset($this->options['config']['initContent']) ? $this->options['config']['initContent'] : '';
+        $initContent = json_encode($initContent);
         $js .= <<<EOF
 //编辑器准备就绪后会触发该事件 具体看api文档
 // ue.execCommand( 'focus' ); //编辑器家在完成后，让编辑器拿到焦点
 //ue.setContent( 'wanphp.cn' ); //编辑器家在完成后，让编辑器初始化内容
 ue.addListener( 'ready', function( editor ) {
-     ue.setContent( '{$initContent}' );
+     ue.setContent( {$initContent} );
  } );
 EOF;
 
